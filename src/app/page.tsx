@@ -6,7 +6,7 @@ export default function Home() {
   return (
      <div className="flex flex-col gap-4 p-12">
        {
-         Object.entries(allData).map(([key, value]) => <a  className="rounded-xs border border-solid p-4" href={`play/${key}`}>{value.name}</a>)
+         Object.entries(allData).map(([key, value]) => <a  key={key} className="rounded-xs border border-solid p-4" href={`play/${key}`}>{value.name}</a>)
        }
      </div>
   );
