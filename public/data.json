@@ -1,0 +1,164 @@
+{
+  "practice": {
+    "name": "Practica",
+    "values": [
+      {
+        "cat": "Exercicis d'escalfament o preliminars",
+        "jap": "Jumbi Undo"
+      },
+      {
+        "cat": "Exercicis de flexibilitat",
+        "jap": "Junan Undo"
+      },
+      {
+        "cat": "Exercicis complementaris",
+        "jap": "Hojo Undo"
+      },
+      {
+        "cat": "Subjeccio de gerres",
+        "jap": "Nigiri-game"
+      },
+      {
+        "cat": "Pal per donar-hi cops",
+        "jap": "Makiwara"
+      },
+      {
+        "cat": "Caixa de sorra",
+        "jap": "Jari-bako"
+      },
+      {
+        "cat": "Rodet de canell",
+        "jap": "Makiage-kigu"
+      },
+      {
+        "cat": "Peses",
+        "jap": "Tetsuarei"
+      },
+      {
+        "cat": "Cadenat de pedra",
+        "jap": "Ishi sashi"
+      }
+    ]
+  },
+  "basic_technique_basics": {
+    "name": "Tecnica Basica: Fonaments",
+    "values": [
+      {
+        "cat": "Zona alta",
+        "jap": "Jodan"
+      },
+      {
+        "cat": "Zona mitja",
+        "jap": "Chudan"
+      },
+      {
+        "cat": "Zona baixa",
+        "jap": "Gedan"
+      },
+      {
+        "cat": "Endevant",
+        "jap": "Mae"
+      },
+      {
+        "cat": "Enderrera",
+        "jap": "Ushiro"
+      },
+      {
+        "cat": "Lateral",
+        "jap": "Yoko"
+      },
+      {
+        "cat": "Esquerra",
+        "jap": "Hidari"
+      },
+      {
+        "cat": "Dreta",
+        "jap": "Migi"
+      },
+      {
+        "cat": "Diagonal",
+        "jap": "Nanamae"
+      },
+      {
+        "cat": "Ascendent",
+        "jap": "Age"
+      },
+      {
+        "cat": "Descendent",
+        "jap": "Otoshi"
+      },
+      {
+        "cat": "Circular",
+        "jap": "Mawashi"
+      },
+      {
+        "cat": "Respiracio normal",
+        "jap": "Donto"
+      },
+      {
+        "cat": "Respiracio profunda sense contraccio abdominal",
+        "jap": "Nogare"
+      },
+      {
+        "cat": "Respiracio profunda amb contraccio abdominal sense so",
+        "jap": "Ibuki-nogare"
+      },
+      {
+        "cat": "Respiracio profunda amb contraccio abdominal sonora",
+        "jap": "Ibuki"
+      },
+      {
+        "cat": "Posicio del tronc en diagonal contrari a la postura dels peus",
+        "jap": "Gyaku hanmi"
+      },
+      {
+        "cat": "Desplaçament cap endevant",
+        "jap": "De ashi"
+      },
+      {
+        "cat": "Desplaçament cap enrrera",
+        "jap": "Haki ashi"
+      },
+      {
+        "cat": "Desplaçament lateral",
+        "jap": "Yoko ashi"
+      },
+      {
+        "cat": "Desplaçament circular",
+        "jap": "Mawari ashi"
+      },
+      {
+        "cat": "Desplaçament saltant",
+        "jap": "Tobi ashi"
+      },
+      {
+        "cat": "Desplaçament caminant normal",
+        "jap": "Ayumi ashi"
+      },
+      {
+        "cat": "Desplaçament caminant lliscant de peu derrera l'altre",
+        "jap": "Tsugi ashi"
+      },
+      {
+        "cat": "Desplaçament Pivotant",
+        "jap": "Tenkai ashi"
+      },
+      {
+        "cat": "Desplaçament saltant",
+        "jap": "Tobi ashi"
+      },
+      {
+        "cat": "Desplaçament saltant",
+        "jap": "Tobi ashi"
+      },
+      {
+        "cat": "Desplaçament saltant",
+        "jap": "Tobi ashi"
+      },
+      {
+        "cat": "Desplaçament saltant",
+        "jap": "Tobi ashi"
+      }
+    ]
+  }
+}
