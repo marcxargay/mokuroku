@@ -2,8 +2,8 @@ import './globals.css'
 import * as React from 'react'
 
 export default function RootLayout({
-   children,
-}: {
+                                       children,
+                                   }: {
     children: React.ReactNode
 }) {
     return (
