@@ -10,7 +10,7 @@ export default async function CategoryPage ({params}: { params: Promise<{ catego
     let name: string
 
     if (param == 'all') {
-        name = "Tots"
+        name = "TOT"
         Object.values(allData).forEach((value:Category) => {
             values.push(...value.values)
         })
