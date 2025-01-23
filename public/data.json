@@ -1,6 +1,6 @@
 {
   "practice": {
-    "name": "Practica",
+    "name": "SHUGYo Practica",
     "values": [
       {
         "cat": "Exercicis d'escalfament o preliminars",
@@ -41,7 +41,7 @@
     ]
   },
   "basic_technique_basics": {
-    "name": "Tecnica Basica: Fonaments",
+    "name": "KIHON WAZA Tecnica Basica: Fonaments",
     "values": [
       {
         "cat": "Zona alta",
@@ -158,6 +158,187 @@
       {
         "cat": "Desplaçament saltant",
         "jap": "Tobi ashi"
+      }
+    ]
+  },
+  "basic_vocabulary": {
+    "name": "Vocabulari especific/Conceptes",
+    "values": [
+      {
+        "cat": "Estil de la escola",
+        "jap": "Goju Ryu"
+      },
+      {
+        "cat": "Ferm, dur, energic",
+        "jap": "Go"
+      },
+      {
+        "cat": "Flexible, suau, adaptable",
+        "jap": "Ju"
+      },
+      {
+        "cat": "Fundador del Goju Ryu",
+        "jap": "Chojun Miyagi"
+      },
+      {
+        "cat": "Mestre de Chojun Miyagi",
+        "jap": "Karntyo Higaona"
+      },
+      {
+        "cat": "Recinte on es practica el Karate-Do",
+        "jap": "DOJO"
+      },
+      {
+        "cat": "Dojo kun",
+        "jap": "Normes i regles de funcionament dins del dojo"
+      },
+      {
+        "cat": "Cami de la ma buida",
+        "jap": "Karate Do"
+      },
+      {
+        "cat": "Saludar",
+        "jap": "Rei"
+      },
+      {
+        "cat": "Saludar drets",
+        "jap": "Ritsu Rei"
+      },
+      {
+        "cat": "Assentar-se de genolls",
+        "jap": "Seiza"
+      },
+      {
+        "cat": "Saludar de genolls",
+        "jap": "Za rei"
+      },
+      {
+        "cat": "Petita meditacio",
+        "jap": "Mokuso"
+      },
+      {
+        "cat": "Aixecar-se, posar-se dret",
+        "jap": "Kiritsu"
+      },
+      {
+        "cat": "Començara",
+        "jap": "Hajime"
+      },
+      {
+        "cat": "Acabar",
+        "jap": "Yame"
+      },
+      {
+        "cat": "Parar",
+        "jap": "Mate"
+      },
+      {
+        "cat": "Preparar-se, parar atencio",
+        "jap": "Yoi"
+      },
+      {
+        "cat": "Postura de guardia",
+        "jap": "Kamae"
+      },
+      {
+        "cat": "Canvi de costat de guardia",
+        "jap": "Mabate"
+      },
+      {
+        "cat": "Tecniques d'evasio amb desplaçament corporal",
+        "jap": "Tenshin"
+      },
+      {
+        "cat": "Respiracio energetica",
+        "jap": "Kokyu"
+      },
+      {
+        "cat": "Centre vital de cada persona",
+        "jap": "Hara"
+      },
+      {
+        "cat": "Cop al coç generalment a un punt vital",
+        "jap": "Atemi"
+      },
+      {
+        "cat": "Punts vitals del cos humà",
+        "jap": "Kyusho"
+      },
+      {
+        "cat": "Aprofitament de l’energia física i mental en el moment de l’impacta o execució. Concentració en un punt i moment",
+        "jap": "Kime"
+      },
+      {
+        "cat": "Energia interior",
+        "jap": "Ki"
+      },
+      {
+        "cat": "Alliberament de l’energia interna mitjançant un crit",
+        "jap": "Kiai"
+      },
+      {
+        "cat": "L’instructor més veterà després del mestre",
+        "jap": "Shidoin"
+      },
+      {
+        "cat": "Veterà dins del Dojo",
+        "jap": "Sempai"
+      },
+      {
+        "cat": "Principiant dins del Dojo",
+        "jap": "Kohai"
+      },
+      {
+        "cat": "Companys de pràctica",
+        "jap": "Otagi"
+      },
+      {
+        "cat": "El braç que executa la tècnica",
+        "jap": "Tsukite"
+      },
+      {
+        "cat": "El braç que recull cap endarrere",
+        "jap": "Hikite"
+      },
+      {
+        "cat": "Distància ideal",
+        "jap": "Ma ai"
+      },
+      {
+        "cat": "Gran distància",
+        "jap": "To ma"
+      },
+      {
+        "cat": "Petita distància",
+        "jap": "Tchika ma"
+      },
+      {
+        "cat": "Temps ideal dins el moviment. 'Timing'",
+        "jap": "De ai"
+      },
+      {
+        "cat": "Sensació",
+        "jap": "Sen"
+      },
+      {
+        "cat": "Moviment executat amb molta força, enganxós però de manera fluida",
+        "jap": "Muchimi"
+      },
+      {
+        "cat": "Condició muscular en la qual els músculs estan tensos com l'acer però al mateix temps flexibles i resistents",
+        "jap": "Chiru non chan chan"
+      },
+      {
+        "cat": "És la tensió o estabilització dels punts d'unió del cos per executar una posició ferma i donar un potent cop, o fer una forta aturada. El karate japonès anomena això com a KIME",
+        "jap": "Chincuchi kaki"
+      },
+      {
+        "cat": "És el moment en què s'executen els moviments lents i relaxats, és el contrapunt d'aquells moviments que s’executen amb molta força",
+        "jap": "Nujisashi"
+      },
+      {
+        "cat": "El poder inherent en l'aparent cop de puny sense esforç, la suau aplicació del Muchimi, i el fluid eficient en el desenvolupament de la tècnica, que manté constant el control de la respiració",
+        "jap": "Shimeijurasa"
       }
     ]
   }
