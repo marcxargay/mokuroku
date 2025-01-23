@@ -8,6 +8,10 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
+        <head>
+            <title>Mokuroku App</title>
+            <link rel="icon" href="/favicon.ico" sizes="any"/>
+        </head>
         <body>{children}</body>
         </html>
     )
