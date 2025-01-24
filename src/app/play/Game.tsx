@@ -4,12 +4,19 @@ import * as React from "react";
 
 import {Value} from "@/types";
 import {useValues} from "@/app/play/hooks";
+import {useGameStore} from "@/app/store";
 
 export function Game () {
     const [index, setIndex] = React.useState<number>(0)
+    const {random} = useGameStore()
     const {values} = useValues()
 
     const handleNext = () => {
+        if(random) {
+            setIndex(Math.floor(Math.random() * values.length))
+            return
+        }
+
         if (index === values.length - 1) {
             setIndex(0)
         } else {
