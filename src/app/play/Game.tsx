@@ -1,10 +1,13 @@
 "use client"
 
 import * as React from "react";
-import {Value} from "@/types";
 
-export function Game ({category, values}: {category: string, values: Value[]}) {
+import {Value} from "@/types";
+import {useValues} from "@/app/play/hooks";
+
+export function Game () {
     const [index, setIndex] = React.useState<number>(0)
+    const {values} = useValues()
 
     const handleNext = () => {
         if (index === values.length - 1) {
@@ -18,10 +21,9 @@ export function Game ({category, values}: {category: string, values: Value[]}) {
         <div className="h-screen flex flex-col">
 
             <div className="flex flex-row justify-between p-4">
-                <h2 className='text-xl font-bold'>{category}</h2>
                 <a href={'/'} className="rounded-md border border-solid p-2">Tornar Enrerra</a>
             </div>
-            <Card value={values[index]}/>
+            {values.length && <Card value={values[index]}/>}
             <button
                 className='bg-gray-500 rounded-lg text-white h-24 m-24'
                 onClick={handleNext}>

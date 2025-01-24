@@ -3,41 +3,50 @@ import * as React from 'react'
 
 import Data from "../../public/data.json"
 import {Temari} from "@/types";
+import {useGameStore} from "@/app/store";
+import Link from "next/link";
 
 export default function Home() {
-    const [selected, setSelected] = React.useState<string[]>([])
-    const [allChecked, setAllChecked] = React.useState<boolean>(false)
-
     const allData: Temari = Data
+    const [allChecked, setAllChecked] = React.useState<boolean>(false)
+    const {setRandom, random, setSelectedCategories, selectedCategories} = useGameStore()
 
     const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         if (e.target.checked) {
-            setSelected([...selected, e.target.value])
+            setSelectedCategories([...selectedCategories, e.target.value])
         } else {
-            setSelected(selected.filter((value) => value !== e.target.value))
+            setSelectedCategories(selectedCategories.filter((value) => value !== e.target.value))
             setAllChecked(false)
         }
     }
 
     const handleCheckAll = (e: React.ChangeEvent<HTMLInputElement>) => {
         if (e.target.checked) {
-            setSelected(Object.keys(allData))
+            setSelectedCategories(Object.keys(allData))
             setAllChecked(true)
         } else {
             setAllChecked(false)
         }
     }
 
+    const handleRandom = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setRandom(e.target.checked)
+    }
+
+    React.useEffect(() => {
+        console.log(selectedCategories)
+    }, [selectedCategories])
+
     return (
         <div className="flex flex-col gap-4 p-12">
             {
-                Object.entries(allData).map(([key, value]) => (<div>
+                Object.entries(allData).map(([key, value]) => (<div key={`parent${key}`}>
                         <input type="checkbox" key={`checkbox${key}`}
                                value={key}
                                id={key}
                                name={key}
                                onChange={handleOnChange}
-                               checked={selected.includes(key) || allChecked}
+                               checked={selectedCategories.includes(key) || allChecked}
                         />
                         <label htmlFor={key} key={`label${key}`}>{value.name}</label>
                     </div>)
@@ -53,7 +62,17 @@ export default function Home() {
                 />
                 <label htmlFor='all' key='all'>Selecciona tot el temari</label>
             </div>
-            <a>Play</a>
+            <div>
+                <input type="checkbox"
+                       value='random'
+                       id='random'
+                       name='random'
+                       onChange={handleRandom}
+                       checked={random}
+                />
+                <label htmlFor='all' key='all'>Aleatori</label>
+            </div>
+            <Link href={'/play'} style={{pointerEvents: selectedCategories.length ? 'inherit' : 'none'}}>Play</Link>
         </div>
     );
 }
