@@ -30,7 +30,7 @@ export function Game () {
             <div className="flex flex-row justify-between p-4">
                 <a href={'/'} className="rounded-md border border-solid p-2">Tornar Enrerra</a>
             </div>
-            {values.length && <Card value={values[index]}/>}
+            {values.length && <Card value={values[index]} />}
             <button
                 className='bg-gray-500 rounded-lg text-white h-24 m-24'
                 onClick={handleNext}>

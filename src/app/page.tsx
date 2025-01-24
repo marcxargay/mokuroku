@@ -41,30 +41,39 @@ export default function Home() {
         <div className="flex flex-col gap-4 p-12 w-full h-dvh">
             <div>
                 {
-                    Object.entries(allData).map(([key, value]) => (<div key={`parent${key}`}>
-                            <input type="checkbox" key={`checkbox${key}`}
-                                   value={key}
-                                   id={key}
-                                   name={key}
-                                   onChange={handleOnChange}
-                                   checked={selectedCategories.includes(key) || allChecked}
-                            />
-                            <label htmlFor={key} key={`label${key}`}>{value.name}</label>
-                        </div>)
+                    Object.entries(allData).map(([key, value]) => (
+
+
+                            <label htmlFor={key} key={`label${key}`}
+                                   className={'flex flex-row gap-2 p-2 border-1 border-grey-100 rounded-lg mb-4'}>
+                                <input type="checkbox" key={`checkbox${key}`}
+                                       value={key}
+                                       id={key}
+                                       name={key}
+                                       onChange={handleOnChange}
+                                       checked={selectedCategories.includes(key) || allChecked}
+                                />
+                                {value.name}</label>
+                        )
                     )
                 }
-                <div>
+                <label htmlFor='all' key='all'
+                       className={'flex flex-row gap-2 p-2 border-1 border-grey-100 rounded-lg mb-4'}>
                     <input type="checkbox"
                            value='all'
                            id='all'
                            name='all'
                            onChange={handleCheckAll}
                            checked={allChecked}
+
                     />
-                    <label htmlFor='all' key='all'>Selecciona tot el temari</label>
-                </div>
+                    Selecciona tot el temari
+                </label>
             </div>
-            <div>
+
+
+            <label htmlFor='random' key='random'
+                   className={'flex flex-row gap-2 p-2 border-1 border-grey-100 rounded-lg mb-4'}>
                 <input type="checkbox"
                        value='random'
                        id='random'
@@ -72,10 +81,11 @@ export default function Home() {
                        onChange={handleRandom}
                        checked={random}
                 />
-                <label htmlFor='all' key='all'>Aleatori</label>
-            </div>
+                Aleatori
+            </label>
+
             <Link
-            className='mt-auto bg-green-800 rounded-lg text-white p-6'
+                className='mt-auto bg-green-800 rounded-lg text-white p-6 text-center'
                 href={'/play'} style={{pointerEvents: selectedCategories.length ? 'inherit' : 'none'}}>Play</Link>
         </div>
     );
