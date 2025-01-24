@@ -40,6 +40,19 @@ export default function Home() {
     return (
         <div className="flex flex-col gap-4 p-12 w-full h-dvh">
             <div>
+                <label htmlFor='all' key='all'
+                       className={'flex flex-row gap-2 p-2 border-1 border-grey-100 rounded-lg mb-4'}>
+                    <input type="checkbox"
+                           value='all'
+                           id='all'
+                           name='all'
+                           onChange={handleCheckAll}
+                           checked={allChecked}
+
+                    />
+                    Selecciona tot el temari
+                </label>
+
                 {
                     Object.entries(allData).map(([key, value]) => (
 
@@ -57,32 +70,19 @@ export default function Home() {
                         )
                     )
                 }
-                <label htmlFor='all' key='all'
+                <label htmlFor='random' key='random'
                        className={'flex flex-row gap-2 p-2 border-1 border-grey-100 rounded-lg mb-4'}>
                     <input type="checkbox"
-                           value='all'
-                           id='all'
-                           name='all'
-                           onChange={handleCheckAll}
-                           checked={allChecked}
-
+                           value='random'
+                           id='random'
+                           name='random'
+                           onChange={handleRandom}
+                           checked={random}
                     />
-                    Selecciona tot el temari
+                    Aleatori
                 </label>
             </div>
 
-
-            <label htmlFor='random' key='random'
-                   className={'flex flex-row gap-2 p-2 border-1 border-grey-100 rounded-lg mb-4'}>
-                <input type="checkbox"
-                       value='random'
-                       id='random'
-                       name='random'
-                       onChange={handleRandom}
-                       checked={random}
-                />
-                Aleatori
-            </label>
 
             <Link
                 className='mt-auto bg-green-800 rounded-lg text-white p-6 text-center'
