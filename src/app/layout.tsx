@@ -2,8 +2,8 @@ import './globals.css'
 import * as React from 'react'
 
 export default function RootLayout({
-                                       children,
-                                   }: {
+   children,
+}: {
     children: React.ReactNode
 }) {
     return (
@@ -12,7 +12,7 @@ export default function RootLayout({
             <title>Mokuroku App</title>
             <link rel="icon" href="/favicon.ico" sizes="any"/>
         </head>
-        <body>{children}</body>
+            <body>{children}</body>
         </html>
     )
 }
